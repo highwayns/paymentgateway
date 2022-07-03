@@ -144,7 +144,7 @@ class ModifyServersOpenApiFilterTest {
                 gzipOutputStream.close();
                 return byteArrayOutputStream.toByteArray();
             } catch (IOException e) {
-                log.error("Error in test when zip content during modify servers from api-doc of {}: {}", path, e.getMessage());
+                //log.error("Error in test when zip content during modify servers from api-doc of {}: {}", path, e.getMessage());
             }
             return "{}".getBytes();
         }
